@@ -1,0 +1,50 @@
+<! DOCTYPE html>
+<html>
+	<cabeza>
+		<título>Ejercicio 3 - Condicionales 2</title>
+		<meta charset="UTF-8">
+		<meta name="description" content="Ejercicio de Condicionales">
+		<meta name="keywords" content="HTML, CSS, JavaScript">
+		<meta nombre="autor" contenido="ANGEL BEJARANO">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Este ejercicio utiliza JQuery por lo que se manda llamar de este modo -->
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<guión>
+			función de respuesta() {
+    		var nombre = $("#nombre"). val();
+    		if (nombre == "John Deacon") {
+        	alert('Respuesta correcta');
+   			 } else { // para la respuesta incorrecta, en este caso es, si no se cumple la primera, se ejecuta la segunda
+        	alert('Respuesta incorrecta');
+   			 }
+		}
+		</guión>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+		<link rel="stylesheet" href="estilos.css" type="text/css">
+	</cabeza>
+
+	<cuerpo>
+		<div class="entidad de seguridad del contenedor">
+			<h1>Ejercicio 3 - Condicionales 2</h1>
+			<br>
+			<h2>Cuestionario de condicional</h2>
+			
+			<forma>
+			<p>¿Quién es el integrante bajista de Queen? </p>
+			<input type="text" name="nombre" id="nombre" placeholder="Escribe la respuesta" />
+			<button onclick="responder();" > Respondedor</botón>
+			</forma>
+<br>
+			<h2>El código utilizado fue:</h2>
+			<code>function responder() {<br>
+ var nombre = $("#nombre").val(); <br>
+				if (nombre == "John Deacon") {<br>
+ alert('Respuesta correcta'); <br>
+					} else { // para la respuesta incorrecta, en este caso es, si no se cumple la primera, se ejecuta la segunda
+				alert('Respuesta incorrecta');
+					}
+			}</código>
+		</div>
+	</cuerpo>
+</html>
